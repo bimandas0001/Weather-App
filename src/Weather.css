@@ -1,0 +1,196 @@
+/* @import url(https://fonts.googleapis.com/css?family=Poiret+One); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Search bar */
+
+.bg {
+    /* background-image: url("./assets/summer.jfif"); */
+    /* background-color: #2f2f2f */
+    background-color:#4A4A4A;
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4 ease;
+}
+
+
+main {
+    min-height: 100vh;
+    padding: 25px;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75)); */
+}
+
+.search-area form {
+    display: flex;
+    justify-content: center; 
+    margin: 0 0 6%;  
+}
+
+.search-bar {
+    width: 50%;
+    padding: 9.4px;
+    
+    font-size: 20px;
+    text-indent: 0.4rem;
+    text-transform: capitalize;
+    color: #313131;
+    background-color: rgba(255,255,255,0.6);
+    
+    /* border: solid 1.6px #333333; */
+    border: solid 1.6px #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+
+    margin-right: -45px;  /* take the button up on it */
+
+    transition: 0.4s ease;
+}
+
+.search-bar:hover {
+    background-color: rgb(255, 255, 255, 0.75);
+}
+
+.search-bar:focus {
+    background-color: rgba(255,255,255,0.9);
+
+}
+
+.search-bar:focus-visible {
+    outline-color: #005eff;
+}
+
+.search-button {
+    background-color: #4285F4;
+    color: white;
+    border: solid 1.6px #005eff;
+    padding: 11px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(66, 133, 244, 0.8);
+    border-radius: 25px;
+
+    transition: 0.25s ease;
+}
+  
+.search-button:hover {
+    background-color: #3B79D6;
+}
+
+/* Search Result */
+
+.container {
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.location {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 3px 3px rgba(50,50,70,0.5);
+    margin: 0 0 30px;
+}
+
+/* Display box */
+
+.box {
+    width: 50%;
+    height: 20rem;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.weather-icon {
+    height: 40%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to right, #ffffff, #9a9595, #ffffff); */
+    background: linear-gradient(to right, #ffffff, #87CEEB, #ffffff);
+}
+
+.weather-icon img {
+    height: 130%; 
+}
+
+.desc1 {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.desc1 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.temp {
+    width: 40%;
+    background-color: #000;
+
+    color: #fff;
+    font-size: 3rem;
+}
+
+.cond {
+    width: 30%;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+.date {
+    width: 30%;
+    background-color: #52d3dc;
+}
+
+.desc2 {
+    height: 30%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.desc2 > div {
+    width: 40%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+    font-size: 1rem;
+}
+
+.desc2 div p:first-child {
+    font-size: 1.5rem;
+}
+
+.desc2 svg {
+    font-size: 2.5rem;
+}
+
+.weather-parameter-icon-humidity {
+    color: #00FFFF;
+}
+
+.weather-parameter-icon-wind {
+    color: #FFA500;
+}
+
+
